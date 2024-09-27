@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1000.0" style="-fx-background-color: #2e2c2c" stylesheets="@application/application.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <TextField fx:id="entryBox" layoutX="161.0" layoutY="903.0" onAction="#submit" prefHeight="64.0" prefWidth="679.0" style="-fx-background-color: #252323;">
+         <font>
+            <Font name="Consolas" size="29.0" />
+         </font>
+      </TextField>
+      <Rectangle fx:id="box0" arcHeight="5.0" arcWidth="5.0" fill="#252323" height="130.0" layoutX="165.0" layoutY="144.0" stroke="WHITE" strokeType="INSIDE" width="130.0" />
+      <Rectangle fx:id="box1" arcHeight="5.0" arcWidth="5.0" fill="#252323" height="130.0" layoutX="300.0" layoutY="144.0" stroke="WHITE" strokeType="INSIDE" width="130.0" />
+      <Rectangle fx:id="box2" arcHeight="5.0" arcWidth="5.0" fill="#252323" height="130.0" layoutX="435.0" layoutY="144.0" stroke="WHITE" strokeType="INSIDE" width="130.0" />
+      <Rectangle fx:id="box3" arcHeight="5.0" arcWidth="5.0" fill="#252323" height="130.0" layoutX="570.0" layoutY="144.0" stroke="WHITE" strokeType="INSIDE" width="130.0" />
+      <Rectangle fx:id="box4" arcHeight="5.0" arcWidth="5.0" fill="#252323" height="130.0" layoutX="705.0" layoutY="144.0" stroke="WHITE" strokeType="INSIDE" width="130.0" />
+      <Rectangle fx:id="box5" arcHeight="5.0" arcWidth="5.0" fill="#252323" height="130.0" layoutX="165.0" layoutY="279.0" stroke="WHITE" strokeType="INSIDE" width="130.0" />
+      <Rectangle fx:id="box6" arcHeight="5.0" arcWidth="5.0" fill="#252323" height="130.0" layoutX="300.0" layoutY="279.0" stroke="WHITE" strokeType="INSIDE" width="130.0" />
+      <Rectangle fx:id="box7" arcHeight="5.0" arcWidth="5.0" fill="#252323" height="130.0" layoutX="435.0" layoutY="279.0" stroke="WHITE" strokeType="INSIDE" width="130.0" />
+      <Rectangle fx:id="box8" arcHeight="5.0" arcWidth="5.0" fill="#252323" height="130.0" layoutX="570.0" layoutY="279.0" stroke="WHITE" strokeType="INSIDE" width="130.0" />
+      <Rectangle fx:id="box9" arcHeight="5.0" arcWidth="5.0" fill="#252323" height="130.0" layoutX="705.0" layoutY="279.0" stroke="WHITE" strokeType="INSIDE" width="130.0" />
+      <Rectangle fx:id="box10" arcHeight="5.0" arcWidth="5.0" fill="#252323" height="130.0" layoutX="165.0" layoutY="414.0" stroke="WHITE" strokeType="INSIDE" width="130.0" />
+      <Rectangle fx:id="box11" arcHeight="5.0" arcWidth="5.0" fill="#252323" height="130.0" layoutX="300.0" layoutY="414.0" stroke="WHITE" strokeType="INSIDE" width="130.0" />
+      <Rectangle fx:id="box12" arcHeight="5.0" arcWidth="5.0" fill="#252323" height="130.0" layoutX="435.0" layoutY="414.0" stroke="WHITE" strokeType="INSIDE" width="130.0" />
+      <Rectangle fx:id="box13" arcHeight="5.0" arcWidth="5.0" fill="#252323" height="130.0" layoutX="570.0" layoutY="414.0" stroke="WHITE" strokeType="INSIDE" width="130.0" />
+      <Rectangle fx:id="box14" arcHeight="5.0" arcWidth="5.0" fill="#252323" height="130.0" layoutX="705.0" layoutY="414.0" stroke="WHITE" strokeType="INSIDE" width="130.0" />
+      <Rectangle fx:id="box15" arcHeight="5.0" arcWidth="5.0" fill="#252323" height="130.0" layoutX="165.0" layoutY="549.0" stroke="WHITE" strokeType="INSIDE" width="130.0" />
+      <Rectangle fx:id="box16" arcHeight="5.0" arcWidth="5.0" fill="#252323" height="130.0" layoutX="300.0" layoutY="549.0" stroke="WHITE" strokeType="INSIDE" width="130.0" />
+      <Rectangle fx:id="box17" arcHeight="5.0" arcWidth="5.0" fill="#252323" height="130.0" layoutX="435.0" layoutY="549.0" stroke="WHITE" strokeType="INSIDE" width="130.0" />
+      <Rectangle fx:id="box18" arcHeight="5.0" arcWidth="5.0" fill="#252323" height="130.0" layoutX="570.0" layoutY="549.0" stroke="WHITE" strokeType="INSIDE" width="130.0" />
+      <Rectangle fx:id="box19" arcHeight="5.0" arcWidth="5.0" fill="#252323" height="130.0" layoutX="705.0" layoutY="549.0" stroke="WHITE" strokeType="INSIDE" width="130.0" />
+      <Rectangle fx:id="box20" arcHeight="5.0" arcWidth="5.0" fill="#252323" height="130.0" layoutX="165.0" layoutY="684.0" stroke="WHITE" strokeType="INSIDE" width="130.0" />
+      <Rectangle fx:id="box21" arcHeight="5.0" arcWidth="5.0" fill="#252323" height="130.0" layoutX="300.0" layoutY="684.0" stroke="WHITE" strokeType="INSIDE" width="130.0" />
+      <Rectangle fx:id="box22" arcHeight="5.0" arcWidth="5.0" fill="#252323" height="130.0" layoutX="435.0" layoutY="684.0" stroke="WHITE" strokeType="INSIDE" width="130.0" />
+      <Rectangle fx:id="box23" arcHeight="5.0" arcWidth="5.0" fill="#252323" height="130.0" layoutX="570.0" layoutY="684.0" stroke="WHITE" strokeType="INSIDE" width="130.0" />
+      <Rectangle fx:id="box24" arcHeight="5.0" arcWidth="5.0" fill="#252323" height="130.0" layoutX="705.0" layoutY="684.0" stroke="WHITE" strokeType="INSIDE" width="130.0" />
+      <Label fx:id="TextBoxLabel" alignment="CENTER" layoutX="161.0" layoutY="864.0" prefHeight="17.0" prefWidth="679.0" style="-fx-background-color: #252323;" text="Enter Your 5 Letter Guess! " textAlignment="CENTER" textFill="WHITE"> 
+         <font>
+            <Font name="Consolas Bold" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

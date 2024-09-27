@@ -1,0 +1,4 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.darkModeBG {
+    -fx-background-color: #2e2c2c;
+}
