@@ -6,13 +6,22 @@ import javafx.scene.control.TextField;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
+import java.util.Arrays;
 
 
 public class Controller {
 	
 	@FXML
 	private AnchorPane anchorPane;
+	
+	@FXML
+	private AnchorPane winScreen;
+	@FXML
+	private AnchorPane loseScreen;
+	
 	
 	@FXML
 	private TextField entryBox;
@@ -75,8 +84,61 @@ public class Controller {
 	@FXML
 	private Rectangle box24;
 	
+	@FXML
+	private Label letter0;
+	@FXML
+	private Label letter1;
+	@FXML
+	private Label letter2;
+	@FXML
+	private Label letter3;
+	@FXML
+	private Label letter4;
+	@FXML
+	private Label letter5;
+	@FXML
+	private Label letter6;
+	@FXML
+	private Label letter7;
+	@FXML
+	private Label letter8;
+	@FXML
+	private Label letter9;
+	@FXML
+	private Label letter10;
+	@FXML
+	private Label letter11;
+	@FXML
+	private Label letter12;
+	@FXML
+	private Label letter13;
+	@FXML
+	private Label letter14;
+	@FXML
+	private Label letter15;
+	@FXML
+	private Label letter16;
+	@FXML
+	private Label letter17;
+	@FXML
+	private Label letter18;
+	@FXML
+	private Label letter19;
+	@FXML
+	private Label letter20;
+	@FXML
+	private Label letter21;
+	@FXML
+	private Label letter22;
+	@FXML
+	private Label letter23;
+	@FXML
+	private Label letter24;
+
+	
 	
 	private int entryID = -1;
+	char[] winArray = {'C', 'C', 'C', 'C', 'C'};
 	
 	public void submit(ActionEvent e) {
 		entry = entryBox.getText();
@@ -90,6 +152,16 @@ public class Controller {
 			TextBoxLabel.setText("Enter Your 5 Letter Guess! ");
 			entryID++;
 			evaluateRow(entry, entryID);
+			
+				
+			if(Arrays.equals(winArray, WordMethods.evaluateWord(entry))) {
+				winScreen.setVisible(true);
+				winScreen.setDisable(false);
+			}
+			else if(entryID==4) {
+				loseScreen.setVisible(true);
+				loseScreen.setDisable(false);
+			}
 		}
 	}
 	
@@ -99,26 +171,37 @@ public class Controller {
 		char[] characterCategories = WordMethods.evaluateWord(text);
 		
 		Rectangle[] boxArray; 
+		Label[] textArray;
 		
+		System.out.println(WordMethods.getAnswer());
 		switch(entryID) {
 		case(0):
 			boxArray = new Rectangle[]{box0, box1, box2, box3, box4};
+			textArray = new Label[]{letter0, letter1, letter2, letter3, letter4};
+			
 			break;
 		case(1):
 			boxArray = new Rectangle[]{box5, box6, box7, box8, box9};
+			textArray = new Label[]{letter5, letter6, letter7, letter8, letter9};
 			break;
 		case(2):
 			boxArray = new Rectangle[]{box10, box11, box12, box13, box14};
+			textArray = new Label[]{letter10, letter11, letter12, letter13, letter14};
 			break;
 		case(3):
 			boxArray = new Rectangle[]{box15, box16, box17, box18, box19};
+			textArray = new Label[]{letter15, letter16, letter17, letter18, letter19};
 			break;
 		case(4):
 			boxArray = new Rectangle[]{box20, box21, box22, box23, box24};
-			System.out.println(WordMethods.getAnswer());
+			textArray = new Label[]{letter20, letter21, letter22, letter23, letter24};
+			
+			
+			
 			break;
 		default:
 			boxArray = null;
+			textArray = null;
 			break;
 		}
 		
@@ -143,6 +226,9 @@ public class Controller {
 				boxArray[i].setFill(Color.rgb(189, 60, 43));
 				//System.out.println("Red");
 			}
+			textArray[i].setText((text.charAt(i)+"").toUpperCase());
+			textArray[i].setVisible(true);
 		}
+
 	}
 }

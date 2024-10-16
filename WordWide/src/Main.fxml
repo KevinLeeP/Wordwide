@@ -6,7 +6,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1000.0" style="-fx-background-color: #2e2c2c" stylesheets="@application/application.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1000.0" style="-fx-background-color: #2e2c2c;" stylesheets="@application/application.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
    <children>
       <TextField fx:id="entryBox" layoutX="161.0" layoutY="903.0" onAction="#submit" prefHeight="64.0" prefWidth="679.0" style="-fx-background-color: #252323;">
          <font>
@@ -43,5 +43,150 @@
             <Font name="Consolas Bold" size="26.0" />
          </font>
       </Label>
+      <Label fx:id="letter0" alignment="TOP_LEFT" layoutX="207.0" layoutY="160.0" prefHeight="76.0" prefWidth="12.0" text="#" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Consolas" size="84.0" />
+         </font>
+      </Label>
+      <Label fx:id="letter1" alignment="TOP_LEFT" layoutX="342.0" layoutY="160.0" prefHeight="76.0" prefWidth="12.0" text="#" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Consolas" size="84.0" />
+         </font>
+      </Label>
+      <Label fx:id="letter2" alignment="TOP_LEFT" layoutX="477.0" layoutY="160.0" prefHeight="64.0" prefWidth="47.0" text="#" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Consolas" size="84.0" />
+         </font>
+      </Label>
+      <Label fx:id="letter3" alignment="TOP_LEFT" layoutX="612.0" layoutY="160.0" prefHeight="76.0" prefWidth="12.0" text="#" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Consolas" size="84.0" />
+         </font>
+      </Label>
+      <Label fx:id="letter4" alignment="TOP_LEFT" layoutX="747.0" layoutY="160.0" prefHeight="76.0" prefWidth="12.0" text="#" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Consolas" size="84.0" />
+         </font>
+      </Label>
+      <Label fx:id="letter5" alignment="TOP_LEFT" layoutX="207.0" layoutY="295.0" prefHeight="76.0" prefWidth="12.0" text="#" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Consolas" size="84.0" />
+         </font>
+      </Label>
+      <Label fx:id="letter6" alignment="TOP_LEFT" layoutX="342.0" layoutY="295.0" prefHeight="76.0" prefWidth="12.0" text="#" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Consolas" size="84.0" />
+         </font>
+      </Label>
+      <Label fx:id="letter7" alignment="TOP_LEFT" layoutX="477.0" layoutY="295.0" prefHeight="64.0" prefWidth="47.0" text="#" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Consolas" size="84.0" />
+         </font>
+      </Label>
+      <Label fx:id="letter8" alignment="TOP_LEFT" layoutX="612.0" layoutY="295.0" prefHeight="76.0" prefWidth="12.0" text="#" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Consolas" size="84.0" />
+         </font>
+      </Label>
+      <Label fx:id="letter9" alignment="TOP_LEFT" layoutX="747.0" layoutY="295.0" prefHeight="76.0" prefWidth="12.0" text="#" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Consolas" size="84.0" />
+         </font>
+      </Label>
+      <Label fx:id="letter10" alignment="TOP_LEFT" layoutX="207.0" layoutY="430.0" prefHeight="76.0" prefWidth="12.0" text="#" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Consolas" size="84.0" />
+         </font>
+      </Label>
+      <Label fx:id="letter11" alignment="TOP_LEFT" layoutX="342.0" layoutY="430.0" prefHeight="76.0" prefWidth="12.0" text="#" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Consolas" size="84.0" />
+         </font>
+      </Label>
+      <Label fx:id="letter12" alignment="TOP_LEFT" layoutX="477.0" layoutY="430.0" prefHeight="64.0" prefWidth="47.0" text="#" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Consolas" size="84.0" />
+         </font>
+      </Label>
+      <Label fx:id="letter13" alignment="TOP_LEFT" layoutX="612.0" layoutY="430.0" prefHeight="76.0" prefWidth="12.0" text="#" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Consolas" size="84.0" />
+         </font>
+      </Label>
+      <Label fx:id="letter14" alignment="TOP_LEFT" layoutX="747.0" layoutY="430.0" prefHeight="76.0" prefWidth="12.0" text="#" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Consolas" size="84.0" />
+         </font>
+      </Label>
+      <Label fx:id="letter15" alignment="TOP_LEFT" layoutX="207.0" layoutY="565.0" prefHeight="76.0" prefWidth="12.0" text="#" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Consolas" size="84.0" />
+         </font>
+      </Label>
+      <Label fx:id="letter16" alignment="TOP_LEFT" layoutX="342.0" layoutY="565.0" prefHeight="76.0" prefWidth="12.0" text="#" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Consolas" size="84.0" />
+         </font>
+      </Label>
+      <Label fx:id="letter17" alignment="TOP_LEFT" layoutX="477.0" layoutY="565.0" prefHeight="64.0" prefWidth="47.0" text="#" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Consolas" size="84.0" />
+         </font>
+      </Label>
+      <Label fx:id="letter18" alignment="TOP_LEFT" layoutX="612.0" layoutY="565.0" prefHeight="76.0" prefWidth="12.0" text="#" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Consolas" size="84.0" />
+         </font>
+      </Label>
+      <Label fx:id="letter19" alignment="TOP_LEFT" layoutX="747.0" layoutY="565.0" prefHeight="76.0" prefWidth="12.0" text="#" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Consolas" size="84.0" />
+         </font>
+      </Label>
+      <Label fx:id="letter20" alignment="TOP_LEFT" layoutX="207.0" layoutY="700.0" prefHeight="76.0" prefWidth="12.0" text="#" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Consolas" size="84.0" />
+         </font>
+      </Label>
+      <Label fx:id="letter21" alignment="TOP_LEFT" layoutX="342.0" layoutY="700.0" prefHeight="76.0" prefWidth="12.0" text="#" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Consolas" size="84.0" />
+         </font>
+      </Label>
+      <Label fx:id="letter22" alignment="TOP_LEFT" layoutX="477.0" layoutY="700.0" prefHeight="64.0" prefWidth="47.0" text="#" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Consolas" size="84.0" />
+         </font>
+      </Label>
+      <Label fx:id="letter23" alignment="TOP_LEFT" layoutX="612.0" layoutY="700.0" prefHeight="76.0" prefWidth="12.0" text="#" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Consolas" size="84.0" />
+         </font>
+      </Label>
+      <Label fx:id="letter24" alignment="TOP_LEFT" layoutX="747.0" layoutY="700.0" prefHeight="76.0" prefWidth="12.0" text="#" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Consolas" size="84.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="winScreen" layoutX="343.0" layoutY="267.0" opacity="0.98" prefHeight="295.0" prefWidth="314.0" styleClass="darkModeBG" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2e2c2c" height="295.0" stroke="WHITE" strokeType="INSIDE" width="314.0" />
+            <Label fx:id="winScreenText" contentDisplay="CENTER" layoutX="57.0" layoutY="58.0" prefHeight="51.0" prefWidth="200.0" text="You Won!" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Consolas Bold" size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="loseScreen" layoutX="343.0" layoutY="267.0" opacity="0.98" prefHeight="295.0" prefWidth="314.0" styleClass="darkModeBG" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2e2c2c" height="295.0" stroke="WHITE" strokeType="INSIDE" width="314.0" />
+            <Label fx:id="winScreenText1" contentDisplay="CENTER" ellipsisString="" layoutX="57.0" layoutY="58.0" lineSpacing="0.5" prefHeight="98.0" prefWidth="200.0" text="Try Again!" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Consolas Bold" size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

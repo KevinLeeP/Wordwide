@@ -11,6 +11,7 @@ import javafx.scene.paint.Color;
 public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
+		
 		try {
 			//BorderPane root = new BorderPane();
 			Parent root = FXMLLoader.load(getClass().getResource("/Main.FXML"));
@@ -20,10 +21,14 @@ public class Main extends Application {
 			
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			
-			primaryStage.setResizable(false);
+			primaryStage.setResizable(true);
+			//primaryStage.set
 			primaryStage.setTitle("WordWide");
 			primaryStage.setScene(scene);
 			primaryStage.show();
+			
+			
+		
 			
 		} catch(Exception e) {
 			e.printStackTrace();
