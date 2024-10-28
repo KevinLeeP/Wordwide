@@ -9,10 +9,10 @@ public class WordMethods {
 	
 	public static void generateAnswer() {
 		
-		if(answer!=null) {
-			return;
-		}
-		
+//		if(answer!=null) {
+//			return;
+//		}
+//		
 		ArrayList<String> wordsList = new ArrayList<String>();
 		int index;
 		
@@ -41,7 +41,8 @@ public class WordMethods {
 	}
 	
 	public static char[] evaluateWord(String word){
-		generateAnswer();
+		//generateAnswer();
+		
 		String capitalizedWord = word.toUpperCase();
 		
 		char[] characters = capitalizedWord.toCharArray();
@@ -84,7 +85,7 @@ public class WordMethods {
 	}
 	
 	public static String getAnswer() {
-		generateAnswer();
+		
 		return answer;
 	}
 	

@@ -137,8 +137,18 @@ public class Controller {
 
 	
 	
+	
+	
 	private int entryID = -1;
+	
+	
 	char[] winArray = {'C', 'C', 'C', 'C', 'C'};
+	
+	
+	
+	
+	
+	
 	
 	public void submit(ActionEvent e) {
 		entry = entryBox.getText();
@@ -165,17 +175,39 @@ public class Controller {
 		}
 	}
 	
-	public void evaluateRow(String text, int entryID) {
+	
+	public void reset(ActionEvent e) {
+		entryID=-1;
+		Rectangle[] allBoxArray = new Rectangle[]{box0, box1, box2, box3, box4, box5, box6, box7, box8, box9, box10, box11, box12, 
+				box13, box14, box15, box16, box17, box18, box19, box20, box21, box22, box23, box24};
 		
-		char[] characters = text.toCharArray();
-		char[] characterCategories = WordMethods.evaluateWord(text);
+		Label[] allLabelArray = new Label[]{letter0, letter1, letter2, letter3, letter4,letter5, letter6, letter7, letter8, letter9, letter10, letter11, letter12, letter13,
+				letter14, letter15, letter16, letter17, letter18, letter19, letter20, letter21, letter22, letter23, letter24 };
+		
+		for(int i=0; i<allBoxArray.length; i++) {
+			allBoxArray[i].setFill(Color.rgb(37, 35, 35));
+			allLabelArray[i].setText("");
+			allLabelArray[i].setVisible(false);
+		}
+		
+		winScreen.setVisible(false);
+		loseScreen.setVisible(false);
+		
+		winScreen.setDisable(true);
+		loseScreen.setDisable(true);
+	}
+	
+	
+	public void evaluateRow(String text, int entryID) {
+	
 		
 		Rectangle[] boxArray; 
 		Label[] textArray;
 		
-		System.out.println(WordMethods.getAnswer());
+		
 		switch(entryID) {
 		case(0):
+			WordMethods.generateAnswer();
 			boxArray = new Rectangle[]{box0, box1, box2, box3, box4};
 			textArray = new Label[]{letter0, letter1, letter2, letter3, letter4};
 			
@@ -204,8 +236,11 @@ public class Controller {
 			textArray = null;
 			break;
 		}
+		System.out.println(WordMethods.getAnswer());
 		
 		
+		char[] characters = text.toCharArray();
+		char[] characterCategories = WordMethods.evaluateWord(text);
 		
 		
 		
