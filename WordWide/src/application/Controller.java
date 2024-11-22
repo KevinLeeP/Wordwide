@@ -8,8 +8,14 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;  
+import javafx.scene.media.MediaView;  
 import javafx.scene.paint.Color;
 import java.util.Arrays;
+import java.io.File;
+import javafx.util.Duration;
+
 
 
 public class Controller {
@@ -136,7 +142,8 @@ public class Controller {
 	private Label letter24;
 
 	
-	
+	Media incorrectSoundMedia = new Media(new File("Sounds/click.mp3").toURI().toString());
+	MediaPlayer incorrectSoundPlayer = new MediaPlayer(incorrectSoundMedia);
 	
 	
 	private int entryID = -1;
@@ -173,6 +180,9 @@ public class Controller {
 				loseScreen.setDisable(false);
 			}
 		}
+		incorrectSoundPlayer.seek(Duration.ZERO);
+		incorrectSoundPlayer.play();
+	
 	}
 	
 	
