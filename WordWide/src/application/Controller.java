@@ -145,6 +145,8 @@ public class Controller {
 	Media incorrectSoundMedia = new Media(new File("Sounds/click.mp3").toURI().toString());
 	MediaPlayer incorrectSoundPlayer = new MediaPlayer(incorrectSoundMedia);
 	
+	Media victorySoundMedia = new Media(new File("Sounds/victory.mp3").toURI().toString());
+	MediaPlayer victorySoundPlayer = new MediaPlayer(victorySoundMedia);
 	
 	private int entryID = -1;
 	
@@ -174,6 +176,8 @@ public class Controller {
 			if(Arrays.equals(winArray, WordMethods.evaluateWord(entry))) {
 				winScreen.setVisible(true);
 				winScreen.setDisable(false);
+				victorySoundPlayer.seek(Duration.ZERO);
+				victorySoundPlayer.play();
 			}
 			else if(entryID==4) {
 				loseScreen.setVisible(true);
